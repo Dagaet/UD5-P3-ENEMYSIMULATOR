@@ -3,15 +3,10 @@ package net.game.classes.mobs.hostileMob;
 import net.game.classes.mobs.Mob;
 import net.game.interfaces.Combat;
 
-public class HostileMob extends Mob implements Combat{
+public abstract class HostileMob extends Mob implements Combat{
 
     public HostileMob(Integer health, Integer strength) {
         super(health, strength);
-    }
-
-    @Override
-    public void movement() {
-        System.out.println("Hostile mob has moved");
     }
 
     @Override
