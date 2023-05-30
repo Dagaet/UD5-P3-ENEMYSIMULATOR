@@ -3,7 +3,7 @@ package net.game.classes.mobs.pacificMob;
 import net.game.classes.mobs.Mob;
 import net.game.interfaces.Damage;
 
-public class PacificMob extends Mob implements Damage{
+public abstract class PacificMob extends Mob implements Damage{
 
     public PacificMob(Integer health, Integer strength) {
         super(health, strength);
@@ -14,11 +14,6 @@ public class PacificMob extends Mob implements Damage{
         Integer remainingHealth = this.health - attack;
         System.out.println("The pacific mob has received " + attack + " dmg and the remaining health is "+ remainingHealth);
         this.health = remainingHealth;
-    }
-
-    @Override
-    public void movement() {
-        System.out.println("Pacific mob has moved");
     }
     
 }
