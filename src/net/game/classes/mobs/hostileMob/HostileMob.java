@@ -11,13 +11,13 @@ public class HostileMob extends Mob implements Combat{
 
     @Override
     public void movement() {
-        
+        System.out.println("Hostile mob has moved");
     }
 
     @Override
     public void receiveAttack(Integer attack) {
         Integer remainingHealth = this.health - attack;
-        System.out.println("The player has received " + attack + " dmg and the remaining health is "+ remainingHealth);
+        System.out.println("The mob has received " + attack + " dmg and the remaining health is "+ remainingHealth);
         this.health = remainingHealth;
     }
 
