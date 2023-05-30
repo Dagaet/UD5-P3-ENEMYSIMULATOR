@@ -1,10 +1,12 @@
 package net.game.classes.mobs;
 
 public abstract class Mob {
-    Integer health;
+    protected Integer health;
+    protected Integer strenght;
 
-    public Mob(Integer health) {
+    public Mob(Integer health, Integer strength) {
         this.health = health;
+        this.strenght = strenght;
     }
 
     public abstract void movement();
