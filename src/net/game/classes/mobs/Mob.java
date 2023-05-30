@@ -9,5 +9,9 @@ public abstract class Mob {
         this.strenght = strenght;
     }
     
+    public Integer getHealth() {
+        return health;
+    }
+
     public abstract void movement();
 }
